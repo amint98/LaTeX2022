@@ -1,0 +1,59 @@
+%Kommentar
+\documentclass{article}
+\usepackage{geometry}
+\geometry{left=2cm, right=1.5cm, top=2cm, bottom=2.5cm,	a4paper}
+\include{structure.tex}
+\title{My first \LaTeX\ document}
+\author{Amin}
+\date{\today}
+
+\graphicspath{{Bilder/}}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\section{Meteorology}
+	\section{Mein erstes Kapitel}
+	Hello, my name is so and so.\\
+	Aufgrund der Tatsache, dass LATEX im englischen Sprachraum entwickelt worden ist, sind einige Anpassungen nötig um es auch mit anderen Sprachen nutzen zu können. Neben den verwendeten Zeichen müssen auch die innerhalb eines Dokuments oft verwendeten Bezeichnungen angepasst werden.\\
+	Es gibt deutliche Unterschiede bei der Angabe eines Datums\\$\sum\limits_{n = 1}^{5}n^2$ in verschiedenen Sprachen, hierbei unterscheiden sich nicht nur die Monatsnamen, sondern auch die Form der Darstellung.
+	$\frac{a + b}{a - b}$\\
+	$a^{22^{b_{723}}}$\\
+	$x_{a_1}^3$\\
+	$\sin(x)$\\
+	
+	\begin{figure}
+		\centering
+		
+		\includegraphics[width=0.8\linewidth]{hase.jpg}
+		\caption{Ein Eichhörnchen in freier Wildbahn.}
+		\label{fig:eichhoernchen}
+	\end{figure}
+	
+	\begin{equation}
+		\sum\limits_{n = 1}^5 n^2 \label{eq:SummeQuadrat}
+	\end{equation}
+	
+	
+	\begin{equation}
+		a^2 + b^2 = c^2
+	\end{equation}
+
+	\begin{equation}
+		\underbrace{\frac{1}{4\pi\epsilon_0}}_{\text{Vorfaktor}}
+	\end{equation}
+	Das war unsere erste Gleichung.
+	
+
+In Gleichung (\ref{eq:SummeQuadrat}) können wir erkennen, dass ... .
+
+\begin{equation}
+	\eck{\frac{1}{n}+\frac{1}{m}}\cdot a
+\end{equation}
+
+	\subsection{title}
+
+	
+	\section{Basics of latex}
+	
+\end{document}
